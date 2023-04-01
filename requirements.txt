@@ -3,3 +3,5 @@ djangorestframework
 requests
 psycopg2
 python-dotenv
+django_extensions
+gunicorn
