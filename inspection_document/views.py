@@ -37,6 +37,7 @@ class InspectionDocumentView(
             inspection_doc.file = request.FILES.get('file')
 
         inspection_doc.comment = comment
+        inspection_doc.file = file if file else inspection_doc.file
         inspection_doc.save()
 
         serializer = self.get_serializer(
